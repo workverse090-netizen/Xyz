@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workverse — HR & Hiring Agency</title>
+  <meta name="description" content="Workverse — Online HR agency finding the right candidates for your company. Recruitment, sourcing, and hiring support." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#2563eb;--accent-2:#06b6d4;--muted:#6b7280;--bg:#f8fafc;font-family:Inter,system-ui,Arial,sans-serif}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0f172a;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .logo{display:flex;gap:12px;align-items:center}
+    .logo .mark{width:44px;height:44px;background:linear-gradient(135deg,var(--accent),var(--accent-2));border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+    nav a{margin-left:18px;color:#0f172a;text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;padding:36px 0}
+    .hero .eyebrow{color:var(--muted);font-weight:600}
+    .hero h1{font-size:28px;margin:8px 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .btn{background:var(--accent);color:white;padding:12px 18px;border-radius:8px;text-decoration:none;display:inline-block;font-weight:700}
+    .secondary{background:white;border:1px solid #e6eefc;color:var(--accent);padding:10px 16px;border-radius:8px;text-decoration:none}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+    .card{background:white;border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+    .how{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:36px 0}
+    .steps{display:flex;flex-direction:column;gap:12px}
+    .step{display:flex;gap:12px;align-items:flex-start}
+    .step .num{background:var(--accent);color:white;width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    .testimonial{background:linear-gradient(90deg,#fff 0,#f8fafc 100%);padding:18px;border-radius:12px}
+    footer{padding:30px 0;color:var(--muted)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    input,textarea,select{width:100%;padding:12px;border-radius:8px;border:1px solid #e6eefc;font-size:14px}
+    label{font-weight:600;margin-bottom:6px;display:block}
+    form .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .small{font-size:13px;color:var(--muted)}
+    @media(max-width:880px){.features{grid-template-columns:1fr}.how{grid-template-columns:1fr}.grid-2{grid-template-columns:1fr}.hero h1{font-size:22px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">W</div>
+        <div>
+          <div style="font-weight:800">Workverse</div>
+          <div class="small">Hire right. Hire fast.</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#how">How it works</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact" class="btn">Get Started</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Online HR & Hiring Agency</div>
+        <h1>Find qualified candidates — fast. Workverse connects you with pre-screened talent for Sales, HR & more.</h1>
+        <p>We source, screen and shortlist candidates tailored to your requirements so you can focus on hiring the right people — not sorting resumes.</p>
+        <div style="display:flex;gap:12px">
+          <a class="btn" href="#contact">Request Candidates</a>
+          <a class="secondary" href="#services">Our Services</a>
+        </div>
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center">
+        <div style="width:100%;max-width:420px">
+          <div class="card" style="text-align:center">
+            <h3 style="margin:8px 0">Hiring Snapshot</h3>
+            <p class="small">Sales Executives • Personal Loans</p>
+            <div style="display:flex;justify-content:space-between;margin-top:12px">
+              <div>
+                <div style="font-size:20px;font-weight:800">24</div>
+                <div class="small">Shortlisted</div>
+              </div>
+              <div>
+                <div style="font-size:20px;font-weight:800">112</div>
+                <div class="small">Applications</div>
+              </div>
+              <div>
+                <div style="font-size:20px;font-weight:800">6</div>
+                <div class="small">Hires</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>What we do</h2>
+      <div class="features">
+        <div class="card">
+          <h3>Candidate Sourcing</h3>
+          <p class="small">We use LinkedIn, job boards and referral networks to source talent specific to your role and location.</p>
+        </div>
+        <div class="card">
+          <h3>Screening & Shortlisting</h3>
+          <p class="small">Resume screening, pre-interview calls, and skills match so you only interview qualified candidates.</p>
+        </div>
+        <div class="card">
+          <h3>Hiring Support</h3>
+          <p class="small">End-to-end support: scheduling interviews, offer communication, and onboarding assistance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="how" class="how">
+      <div>
+        <h2>How it works</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="num">1</div>
+            <div>
+              <strong>Tell us your need</strong>
+              <div class="small">Share role, experience, location and KPIs.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">2</div>
+            <div>
+              <strong>We source & screen</strong>
+              <div class="small">LinkedIn search + targeted outreach + pre-screen calls.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">3</div>
+            <div>
+              <strong>Shortlist & schedule</strong>
+              <div class="small">You get a short list of ready-to-interview candidates.</div>
+            </div>
+          </div>
+          <div class="step">
+            <div class="num">4</div>
+            <div>
+              <strong>Hire & onboard</strong>
+              <div class="small">We support offer letters and joining coordination.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card testimonial">
+          <h3 style="margin-top:0">Client Testimonial</h3>
+          <p style="margin:8px 0">"Workverse helped us hire a strong sales team in under two weeks. Their screening saved us hours of interviews."</p>
+          <p class="small" style="margin:0">— Rohan Kapoor, Ops Lead</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <h2>Clients & Sectors</h2>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+        <div class="card" style="min-width:180px">BFSI & Loans</div>
+        <div class="card" style="min-width:180px">Startups & Tech</div>
+        <div class="card" style="min-width:180px">Retail & FMCG</div>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:30px">
+      <h2>Request Candidates / Contact Us</h2>
+      <div class="card">
+        <form action="mailto:workverse.hr@gmail.com" method="post" enctype="text/plain">
+          <div class="row">
+            <div>
+              <label for="name">Full name</label>
+              <input id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div>
+              <label for="role">Hiring for</label>
+              <input id="role" name="role" placeholder="e.g. Sales Executive" required>
+            </div>
+          </div>
+          <div style="margin-top:12px">
+            <label for="details">Details / Requirements</label>
+            <textarea id="details" name="details" rows="4" placeholder="Brief about role, experience, location"></textarea>
+          </div>
+          <div style="display:flex;gap:12px;margin-top:12px">
+            <button type="submit" class="btn">Send Request</button>
+            <a class="secondary" href="mailto:workverse.hr@gmail.com">Email: workverse.hr@gmail.com</a>
+          </div>
+        </form>
+      </div>
+      <div style="margin-top:12px" class="small">Or WhatsApp: +91 XXXXXXXXXX</div>
+    </section>
+
+    <footer style="margin-top:40px;border-top:1px solid #e6eefc;padding-top:20px;display:flex;justify-content:space-between;align-items:center">
+      <div>
+        <div style="font-weight:800">Workverse</div>
+        <div class="small">Online HR & Hiring Agency</div>
+      </div>
+      <div class="small">© <span id="y"></span> Workverse — All rights reserved</div>
+    </footer>
+  </div>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
